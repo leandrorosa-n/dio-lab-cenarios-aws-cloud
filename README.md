@@ -24,7 +24,6 @@ Uso do Amazon S3 para armazenamento seguro e escalável de documentos regulatór
 Essa etapa garante redução de custos com infraestrutura física e maior confiabilidade no acesso às informações.
 
 # Etapa 2
-Etapa 2
 Nome da ferramenta: AWS Glue + Amazon Redshift
 
 Foco da ferramenta: ETL e Data Warehouse
@@ -34,7 +33,7 @@ AWS Glue para orquestrar pipelines de dados, integrando informações de sistema
 Amazon Redshift como data warehouse para análises avançadas, relatórios financeiros e dashboards de performance, permitindo decisões estratégicas baseadas em dados.
 Essa etapa reduz custos operacionais ao centralizar dados e otimizar relatórios, eliminando redundâncias e aumentando a eficiência analítica.
 
-#Etapa 3
+# Etapa 3
 Nome da ferramenta: Amazon SageMaker + AWS Lake Formation
 
 Foco da ferramenta: Machine Learning e Governança de Dados
