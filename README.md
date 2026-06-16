@@ -1,52 +1,170 @@
+# 🚀 DIO | Relatório de Implementação de Serviços AWS para Engenharia de Dados
 
-# DIO | RELATÓRIO DE IMPLEMENTAÇÃO DE SERVIÇOS AWS (Engenharia de dados)
+![Arquitetura AWS Mold Industries](https://github.com/leandrorosa-n/dio-lab-cenarios-aws-cloud/blob/main/Mold-Industries.png)
 
-# Data: 09/04/2026
-# Empresa: Mold Industries Ltda (fictícia)
-# Responsável: Leandro Rosa
+## 📋 Sobre o Projeto
 
-# Introdução 
-Este relatório apresenta o processo de implementação de ferramentas na empresa Mold Industries Ltda, realizado por Leandro Rosa. O objetivo do projeto foi elencar 3 serviços AWS, com a finalidade de realizar diminuição de custos imediatos, além de garantir escalabilidade, segurança e conformidade regulatória para uma empresa de grande porte no setor farmacêutico.
+Este projeto foi desenvolvido como parte do desafio da Digital Innovation One (DIO), com o objetivo de propor uma arquitetura baseada em serviços AWS capaz de reduzir custos operacionais, aumentar a escalabilidade, fortalecer a segurança dos dados e garantir conformidade regulatória para uma empresa fictícia do setor farmacêutico.
 
-[Computação em Nuvem] https://https://www.dio.me/
+**Empresa:** Mold Industries Ltda (Fictícia)  
+**Responsável:** Leandro Rosa  
+**Data:** 09/04/2026
 
-# Descrição do Projeto
-O projeto de implementação de ferramentas foi dividido em 3 etapas, cada uma com seus objetivos específicos.
+---
 
-# Etapa 1
-Nome da ferramenta: Amazon RDS + Amazon S3
+## 🎯 Objetivo
 
-Foco da ferramenta: Banco de dados relacional e armazenamento de arquivos
+O objetivo deste projeto é demonstrar como a adoção de serviços gerenciados da AWS pode contribuir para a modernização da infraestrutura tecnológica da empresa, proporcionando:
 
-Descrição de caso de uso:
-Utilização do Amazon RDS para hospedar bancos de dados críticos (ERP, CRM, dados de pesquisa clínica) com alta disponibilidade, replicação automática e backups gerenciados.
-Uso do Amazon S3 para armazenamento seguro e escalável de documentos regulatórios, relatórios médicos e arquivos multimídia, com versionamento e criptografia.
-Essa etapa garante redução de custos com infraestrutura física e maior confiabilidade no acesso às informações.
+- Redução de custos operacionais;
+- Escalabilidade sob demanda;
+- Alta disponibilidade dos sistemas;
+- Maior segurança da informação;
+- Governança de dados;
+- Conformidade regulatória;
+- Apoio à tomada de decisões baseada em dados.
 
-# Etapa 2
-Nome da ferramenta: AWS Glue + Amazon Redshift
+---
 
-Foco da ferramenta: ETL e Data Warehouse
+## 🏗️ Arquitetura da Solução
 
-Descrição de caso de uso:
-AWS Glue para orquestrar pipelines de dados, integrando informações de sistemas internos e externos, automatizando processos de extração, transformação e carga.
-Amazon Redshift como data warehouse para análises avançadas, relatórios financeiros e dashboards de performance, permitindo decisões estratégicas baseadas em dados.
-Essa etapa reduz custos operacionais ao centralizar dados e otimizar relatórios, eliminando redundâncias e aumentando a eficiência analítica.
+A arquitetura proposta foi dividida em três etapas estratégicas:
 
-# Etapa 3
-Nome da ferramenta: Amazon SageMaker + AWS Lake Formation
+### Etapa 1 — Armazenamento e Banco de Dados
 
-Foco da ferramenta: Machine Learning e Governança de Dados
+**Serviços AWS Utilizados**
 
-Descrição de caso de uso:
-SageMaker para criação e treinamento de modelos de previsão de demanda, otimização da cadeia de suprimentos e análise de eficácia de medicamentos.
-Lake Formation para construção de um data lake seguro e governado, com controle de acesso granular e conformidade regulatória (LGPD e FDA).
-Essa etapa garante redução de custos ao otimizar processos produtivos e logísticos, além de aumentar a competitividade com uso de inteligência artificial.
+- Amazon RDS
+- Amazon S3
 
-# Conclusão
-A implementação de ferramentas na empresa Mold Industries Ltda tem como esperado redução de custos imediatos, maior eficiência operacional, escalabilidade e conformidade regulatória, o que aumentará a produtividade e a competitividade da empresa no setor farmacêutico. Recomenda-se a continuidade da utilização das ferramentas implementadas e a busca por novas tecnologias que possam melhorar ainda mais os processos da empresa.
+#### Objetivo
 
-# Anexos
-Manuais de configuração AWS RDS, S3, Glue, Redshift, SageMaker e Lake Formation
+Modernizar o armazenamento de dados corporativos e documentos críticos.
 
-Nome do responsável: Leandro Rosa
+#### Caso de Uso
+
+O Amazon RDS é utilizado para hospedar bancos de dados críticos da organização, incluindo sistemas ERP, CRM e dados de pesquisas clínicas, garantindo alta disponibilidade, replicação automática e backups gerenciados.
+
+O Amazon S3 é utilizado para armazenar documentos regulatórios, relatórios médicos e arquivos multimídia com criptografia, versionamento e alta durabilidade.
+
+#### Benefícios
+
+- Alta disponibilidade
+- Escalabilidade automática
+- Redução de custos com infraestrutura física
+- Backups automatizados
+- Armazenamento seguro e confiável
+
+---
+
+### Etapa 2 — Integração e Analytics
+
+**Serviços AWS Utilizados**
+
+- AWS Glue
+- Amazon Redshift
+
+#### Objetivo
+
+Centralizar e transformar dados para geração de informações estratégicas.
+
+#### Caso de Uso
+
+O AWS Glue é responsável pela automação dos processos de ETL (Extração, Transformação e Carga), integrando dados provenientes de diferentes sistemas corporativos.
+
+O Amazon Redshift atua como Data Warehouse corporativo, permitindo análises avançadas, dashboards executivos e relatórios financeiros de alta performance.
+
+#### Benefícios
+
+- Automação de pipelines de dados
+- Centralização das informações corporativas
+- Redução de redundâncias
+- Consultas analíticas de alta performance
+- Melhoria na tomada de decisão
+
+---
+
+### Etapa 3 — Inteligência Artificial e Governança
+
+**Serviços AWS Utilizados**
+
+- Amazon SageMaker
+- AWS Lake Formation
+
+#### Objetivo
+
+Implementar governança de dados e inteligência artificial para otimização dos processos corporativos.
+
+#### Caso de Uso
+
+O Amazon SageMaker é utilizado para desenvolvimento e treinamento de modelos de Machine Learning voltados para:
+
+- Previsão de demanda;
+- Otimização da cadeia de suprimentos;
+- Análise de eficácia de medicamentos.
+
+O AWS Lake Formation é responsável pela criação de um Data Lake seguro e governado, oferecendo controle granular de acesso e suporte às exigências regulatórias.
+
+#### Benefícios
+
+- Governança centralizada dos dados
+- Segurança reforçada
+- Conformidade com LGPD
+- Conformidade com FDA
+- Aplicação de inteligência artificial em escala
+
+---
+
+## ☁️ Serviços AWS Utilizados
+
+| Serviço | Finalidade |
+|----------|------------|
+| Amazon RDS | Banco de dados relacional gerenciado |
+| Amazon S3 | Armazenamento seguro de objetos |
+| AWS Glue | ETL e integração de dados |
+| Amazon Redshift | Data Warehouse corporativo |
+| AWS Lake Formation | Governança e Data Lake |
+| Amazon SageMaker | Machine Learning |
+
+---
+
+## 📈 Resultados Esperados
+
+Com a implementação da arquitetura proposta, espera-se alcançar:
+
+- Redução imediata dos custos operacionais;
+- Aumento da eficiência dos processos internos;
+- Escalabilidade para crescimento do negócio;
+- Maior disponibilidade dos sistemas críticos;
+- Melhoria na qualidade das análises corporativas;
+- Segurança e governança dos dados;
+- Conformidade regulatória;
+- Maior competitividade no setor farmacêutico.
+
+---
+
+## 🔒 Segurança e Conformidade
+
+A arquitetura foi planejada seguindo boas práticas da AWS para segurança e governança:
+
+- Criptografia de dados em repouso e em trânsito;
+- Controle de acesso baseado em permissões;
+- Gestão centralizada de dados;
+- Conformidade com LGPD;
+- Conformidade com regulamentações do setor farmacêutico.
+
+---
+
+## 📚 Referências
+
+- https://aws.amazon.com/
+- https://docs.aws.amazon.com/
+- https://www.dio.me/
+
+---
+
+## 👨‍💻 Autor
+
+**Leandro Rosa**
+
+Projeto desenvolvido como parte dos estudos em Computação em Nuvem e Engenharia de Dados na AWS através da plataforma DIO (Digital Innovation One).
